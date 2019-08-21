@@ -1,0 +1,22 @@
+[package]
+name = "wasmtime-wasi-custom"
+version = "0.1.0"
+authors = ["Stefan Junker <sjunker@redhat.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmtime-api = { git = "https://github.com/CraneStation/wasmtime", package = "wasmtime-api", rev = "v0.3.0" }
+wasmtime-wasi = { git = "https://github.com/CraneStation/wasmtime", package = "wasmtime-wasi", rev = "v0.3.0" }
+wasi-common = { git = "https://github.com/CraneStation/wasi-common", rev = "1bf5106f405d3f53321a9b54fb6108fa448a31e3"}
+wabt = "0.7"
+failure ="*"
+
+[features]
+
+default = ["rust"]
+
+c = []
+rust = []
