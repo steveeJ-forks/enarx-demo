@@ -1,0 +1,26 @@
+[package]
+name = "wasmtime-custom-syscall"
+version = "0.1.0"
+authors = ["Stefan Junker <sjunker@redhat.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = { path = "../common" }
+# wasmtime = { git = "https://github.com/yurydelendik/wasmtime", rev = "0c30c4f1ac29030c24124171f76a07c2edb42c4b" }
+# wasmtime-bindings = { git = "https://github.com/yurydelendik/wasmtime", rev = "0c30c4f1ac29030c24124171f76a07c2edb42c4b" }
+# wasmtime-bindings-macro = { git = "https://github.com/yurydelendik/wasmtime", rev = "0c30c4f1ac29030c24124171f76a07c2edb42c4b" }
+# wasmtime-wasi = { git = "https://github.com/yurydelendik/wasmtime", rev = "0c30c4f1ac29030c24124171f76a07c2edb42c4b" }
+wabt = "0.9"
+
+wasmtime = { git = "https://github.com/steveeJ-forks/wasmtime", rev = "16421f31b622c7e11fda038909d1e82cb4432cee" }
+wasmtime-bindings = { git = "https://github.com/steveeJ-forks/wasmtime", rev = "16421f31b622c7e11fda038909d1e82cb4432cee" }
+wasmtime-bindings-macro = { git = "https://github.com/steveeJ-forks/wasmtime", rev = "16421f31b622c7e11fda038909d1e82cb4432cee" }
+wasmtime-wasi = { git = "https://github.com/steveeJ-forks/wasmtime", rev = "16421f31b622c7e11fda038909d1e82cb4432cee" }
+
+# wasmtime = { path = "/home/steveej/src/job-redhat/enarx/wasmtime_yury/crates/api" }
+# wasmtime-bindings = { path = "/home/steveej/src/job-redhat/enarx/wasmtime_yury/crates/bindings" }
+# wasmtime-bindings-macro = { path = "/home/steveej/src/job-redhat/enarx/wasmtime_yury/crates/bindings/macro" }
+# wasmtime-wasi = { path = "/home/steveej/src/job-redhat/enarx/wasmtime_yury/crates/wasi" }
